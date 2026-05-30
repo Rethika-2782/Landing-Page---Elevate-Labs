@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elevate — Build Something Great</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="#" class="logo">
+        <span class="logo__dot"></span>
+        elevate
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="main-nav">
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact" class="nav__cta">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section class="hero">
+      <div class="hero__bg">
+        <div class="hero__blob hero__blob--1"></div>
+        <div class="hero__blob hero__blob--2"></div>
+        <div class="hero__grid"></div>
+      </div>
+
+      <div class="hero__content">
+        <span class="hero__badge">✦ New — Version 2.0 is live</span>
+        <h1 class="hero__heading">
+          Build the future.<br />
+          <em>Ship today.</em>
+        </h1>
+        <p class="hero__sub">
+          Elevate gives your team the tools, speed, and confidence to turn bold ideas into real products — without the usual chaos.
+        </p>
+        <div class="hero__actions">
+          <a href="#" class="btn btn--primary">Start for free</a>
+          <a href="#" class="btn btn--ghost">Watch demo ↗</a>
+        </div>
+        <p class="hero__note">No credit card required · Free forever plan</p>
+      </div>
+
+      <div class="hero__visual">
+        <div class="card card--1">
+          <div class="card__dot card__dot--green"></div>
+          <p>Deploy successful</p>
+          <span>v2.4.1 · just now</span>
+        </div>
+        <div class="card card--2">
+          <div class="card__icon">⚡</div>
+          <p>Performance</p>
+          <div class="bar"><div class="bar__fill" style="width:88%"></div></div>
+          <span>88 / 100</span>
+        </div>
+        <div class="card card--3">
+          <p class="card__stat">12.4k</p>
+          <span>Active users</span>
+          <div class="card__trend">↑ 24%</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES STRIP -->
+    <section class="features" id="features">
+      <div class="features__inner">
+        <div class="feature">
+          <span class="feature__icon">🚀</span>
+          <h3>Lightning Fast</h3>
+          <p>Deploy in seconds with our optimised CI/CD pipeline.</p>
+        </div>
+        <div class="feature">
+          <span class="feature__icon">🔒</span>
+          <h3>Secure by Default</h3>
+          <p>End-to-end encryption and SOC 2 compliance out of the box.</p>
+        </div>
+        <div class="feature">
+          <span class="feature__icon">🎨</span>
+          <h3>Fully Customisable</h3>
+          <p>Tailor every workflow to fit exactly how your team works.</p>
+        </div>
+        <div class="feature">
+          <span class="feature__icon">📊</span>
+          <h3>Real-time Analytics</h3>
+          <p>Understand your users with live dashboards and insights.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="logo logo--light">
+          <span class="logo__dot"></span>
+          elevate
+        </a>
+        <p>Making great products accessible to everyone.</p>
+      </div>
+
+      <div class="footer__links">
+        <div class="footer__col">
+          <h4>Product</h4>
+          <a href="#">Features</a>
+          <a href="#">Pricing</a>
+          <a href="#">Changelog</a>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+        </div>
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+
+      <div class="footer__social">
+        <a href="#" aria-label="Twitter">𝕏</a>
+        <a href="#" aria-label="GitHub">⌥</a>
+        <a href="#" aria-label="LinkedIn">in</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2025 Elevate Inc. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('main-nav');
+    btn.addEventListener('click', () => {
+      const open = nav.classList.toggle('nav--open');
+      btn.setAttribute('aria-expanded', open);
+    });
+
+    // Sticky header shadow
+    window.addEventListener('scroll', () => {
+      document.querySelector('.header').classList.toggle('header--scrolled', window.scrollY > 20);
+    });
+  </script>
+</body>
+</html>
