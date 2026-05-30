@@ -70,3 +70,11 @@ Build a responsive landing page with a header, hero section, and footer using on
 - Chrome Browser
 - Live Server extension
 - Google Fonts (Syne + DM Sans)
+
+Deployed Link : https://github.com/Rethika-2782/Landing-Page---Elevate-Labs.git
+
+Images : 
+
+<img width="1918" height="903" alt="image" src="https://github.com/user-attachments/assets/3d7e5b34-0804-4db8-b5b5-f15bf4040ed5" />
+<img width="1918" height="911" alt="image" src="https://github.com/user-attachments/assets/55e7d376-1ee1-40f0-b81e-0b9c3d8e9575" />
+          
